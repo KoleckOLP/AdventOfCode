@@ -1,4 +1,4 @@
-f = open("2020\day 1\input.txt", "r") #(kali)
+f = open("2020\\day 1\\input.txt", "r") #(kali)
 
 lines = f.readlines()
 

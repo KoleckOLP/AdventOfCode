@@ -1,4 +1,4 @@
-f = open("2020\day 2\input.txt", "r")
+f = open("2020\\day 2\\input.txt", "r")
 
 lines = f.readlines()
 
