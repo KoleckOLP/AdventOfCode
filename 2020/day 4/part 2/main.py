@@ -1,8 +1,8 @@
 import re
 
-f = open("2020\\day 4\\part 2\\test.txt", "r") # test from the page
+#f = open("2020\\day 4\\part 2\\test.txt", "r") # test from the page
 # had to add new line after the last batch to make it detect xDD
-#f = open("2020\\day 4\\input.txt", "r")
+f = open("2020\\day 4\\input.txt", "r")
 
 lines = f.readlines()
 
@@ -23,20 +23,24 @@ for l in lines:
             fields = fields+temp
         print(fields)
         for j in fields:
+            j = j.strip()
             if "byr:" in j: # success checking byr
                 byr = j.replace("byr:", "")
                 byr = int(byr)
                 if byr >= 1920 and byr <= 2002:
+                    print("byr good")
                     check=check+1
             if "iyr:" in j: # sucess checking iyr
                 iyr = j.replace("iyr:", "")
                 iyr = int(iyr)
                 if iyr >= 2010 and iyr <= 2020:
+                    print("iyr good")
                     check=check+1
             if "eyr:" in j:
                 eyr = j.replace("eyr:", "")
                 eyr = int(eyr)
                 if eyr >= 2020 and eyr <= 2030:
+                    print("eyr good")
                     check=check+1
             if "hgt:" in j: # sucess checking hgt
                 if "cm" in j:
@@ -44,25 +48,30 @@ for l in lines:
                     hgt = hgt.replace("cm", "")
                     hgt = int(hgt)
                     if hgt >= 150 and hgt <= 193:
+                        print("hgt in cm good")
                         check=check+1
                 elif "in" in j:
                     hgt = j.replace("hgt:", "")
                     hgt = hgt.replace("in", "")
                     hgt = int(hgt)
                     if hgt >= 59 and hgt <= 76:
+                        print("hgt in im good")
                         check=check+1
             if "hcl:" in j: # Broo I used regex to get a sucess!!
                 hcl = j.replace("hcl:", "")
                 if re.match("^#[a-f0-9]{6}$", hcl):
+                    print("hcl good")
                     check=check+1
             if "ecl:" in j:
                 ecl = j.replace("ecl:", "")
                 allowed = ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"]
                 if ecl in allowed:
+                    print("elc good")
                     check=check+1
             if "pid:" in j:
                 pid = j.replace("pid:", "")
                 if re.match("^\d{9}$", pid):
+                    print("pid good")
                     check=check+1
         
         byr = None
