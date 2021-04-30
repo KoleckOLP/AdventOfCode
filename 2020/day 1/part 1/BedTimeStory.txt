@@ -1,0 +1,15 @@
+opening file to read
+
+reading lines from the file
+
+for every line in the file
+	wanted is 2020 minus current line to int without the new line
+	wanted is wanted string with new line
+	if wanted is in lines
+		test is current line to int without new line plus wanted to int without new line
+		result is current line to int without new line * wanted to int without new line
+		print curent line without new line, wanted without new line, the result of the curent like plus newline which has be 2020, and the result which is curent line plus wanted
+		exit the program because the result was found already
+	print curent line
+	
+close file at the end
