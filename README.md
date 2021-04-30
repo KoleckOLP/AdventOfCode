@@ -1,8 +1,10 @@
 # AdventOfCode2020
-my solutions to https://adventofcode.com/2020
+my solutions to https://adventofcode.com/
 
-I am not logged into the page, I'm taking Kali's imput files and I'm giving my results results to Kali and he's the judge.
+Maintly trying to finish the 2020 one, but probably will no be able to do it before the next one starts.
 
-I may login to find out if I can get my own files and my own results.
+if you see imput files caleld (kali), they were my friends and I used the because I was far too scared to login for myself,
 
-This is also my first step towards making more private repos to make my code acceseble to me.
+I tought if you fail the task you can't continue or something.
+
+Now I have my own login Lol. :)
